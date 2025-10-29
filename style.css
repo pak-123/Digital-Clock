@@ -1,0 +1,42 @@
+body {
+  background-color: #000; /* Pure black background */
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Clock container */
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 6rem;
+}
+
+/* Responsive & centered heading */
+h2 {
+  color: palevioletred;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Auto adjusts with screen size */
+  text-align: center; /* Centers the heading horizontally */
+  margin-top: 8rem; /* Adds spacing from top */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Time boxes */
+.box {
+  height: 170px;
+  width: 170px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff7b9c; /* Soft neon pink text */
+  text-shadow: 0 5px 10px rgba(255, 100, 130, 0.7); /* ↓ downward shadow */
+  box-shadow: 10px 9px 20px rgba(255, 100, 130, 0.3); /* ↓ box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
